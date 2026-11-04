@@ -1,16 +1,156 @@
-.container{
-display: flex;
-flex-wrap: wrap;
-width: 640px;
-height: 640px;
-border: 2px  solid black;
-
-
-}
-
-
-.cube{   
+*{
     box-sizing: border-box;
-    border: 0.5px solid black;
+    margin: 0;
+    padding: 0;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background: linear-gradient(135deg,#5fb8c2,#98eaf0);
+    font-family: "Lobster",cursive;
+}
+
+.etch{
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+    padding: 28px 32px 32px;
+    background: #b8251b;
+    border-radius: 40px;
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.45),0 6px 14px rgba(0,0,0,0.25);
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffe03d;
+}
+
+.header h1{
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.header .side{
+    flex: 0 0 15%;
+    font-size: 0.8rem;
+}
+
+.header .side:last-child{
+    text-align: center;
+
+}
+.screen{
+    width: 100%;
+    aspect-ratio: 24/16;
+    display: flex;
+    background: #e0e0e0;
+    border: 2px solid #cfcfcf;
+}
+
+
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.circle-btn{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5a4a00;
+    border-radius: 50%;
+    background: #ffe03d;
+    color: #111;
+    font-family: "Lobster",cursive;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.35);
+}
+
+.circle-btn:hover{
+    background: #fff06a;
+}
+.circle-btn:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+
+.resize{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.resize input{
+    width: 140px;
+    padding: 2px 4px;
+    border: 1px solid #777;
+    font-size: 0.8rem;
+}
+
+
+.resize button{
+    padding: 3px 18px;
+    border: 2px solid #5a4a00;
+    border-radius: 4px;
+    background: #ffe03d;
+    color: #111;
+    font-family: "Lobster",cursive;
+    cursor: pointer;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.35);
+}
+
+.resize button:hover{
+    background: #fff06a;
+}
+
+
+
+
+.footer{
+    font-family: "Gochi Hand", cursive;
+    font-size: 1rem;
+    color: #222;
+}
+
+.footer a {
+    color: #b8251b;
+    text-decoration: none;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media(max-width:480px){
+    .etch{ padding: 20px 16px 24px; border-radius: 28px;}
+    .header h1{ font-size: 1.8rem;}
+
+    .circle-btn{width: 46px; height: 46px; font-size: 0.7rem; font-family: "Lobster",cursive;}
+}

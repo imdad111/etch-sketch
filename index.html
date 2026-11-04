@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div class="container">
+    <main class="etch">
+        <header class="header"><span class='side'>Magic</span>
+            <h1>Etch A Sketch</h1> <span class="side">Screen</span>
+        </header>
 
-    </div>
-    
-    
 
-<script src="app.js"></script>
+        <section class="screen">
+
+
+        </section>
+
+        <nav class="controls">
+            <button class="circle-btn" type="button" id="Black">Black</button>
+            <button class="circle-btn" type="button" id="grey">Gray</button>
+            <button class="circle-btn" type="button" id="rainbow">Rainbow</button>
+            <button class="circle-btn" type="button" id="erase">Erase</button>
+            <button class="circle-btn" type="button" id="reset">Reset</button>
+        </nav>
+
+        <form class="resize" onsubmit="return false" >
+            <input type="number" min="1" max="100">
+            <button type="submit">Resize</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        Built by <a href="#">Imdad</a> | <a href="#">Source</a>
+    </footer>
+
+
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
